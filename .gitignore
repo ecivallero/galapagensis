@@ -1,0 +1,9 @@
+# Installed packages
+node_modules/
+
+# Eleventy build output
+_site/
+
+# Operating-system clutter
+.DS_Store
+Thumbs.db
