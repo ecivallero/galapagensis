@@ -75,10 +75,16 @@ header{
   transition:color .18s ease;
 }
 .site-nav-link:hover,
-.site-nav-link:focus-visible{
+.site-nav-link:focus-visible,
+.lang:hover,
+.lang:focus-within{
   color:var(--accent);
 }
-.lang{margin-left:.4rem;white-space:nowrap}
+.lang{
+  margin-left:.4rem;
+  white-space:nowrap;
+  transition:color .18s ease;
+}
 
 .hero{
   padding:7.5rem 0 5.5rem;
@@ -443,6 +449,12 @@ footer{
 
 .footer-links a{
   text-decoration:none;
+  transition:color .18s ease;
+}
+
+.footer-links a:hover,
+.footer-links a:focus-visible{
+  color:var(--accent);
 }
 
 .footer-copyright{
