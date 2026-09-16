@@ -238,7 +238,64 @@ color:var(--muted);
 }
 
 /* =========================================================
-   06. SHARED SECTION STRUCTURE
+   06. SUPPORT BANNER
+   ========================================================= */
+
+.support-banner{
+padding:0;
+background:var(--accent);
+color:#fff;
+}
+
+.support-banner-inner{
+min-height:126px;
+display:flex;
+align-items:center;
+justify-content:space-between;
+gap:2rem;
+padding-top:1.7rem;
+padding-bottom:1.7rem;
+}
+
+.support-kicker{
+margin:0 0 .35rem;
+font:700 .72rem Arial,sans-serif;
+text-transform:uppercase;
+letter-spacing:.14em;
+}
+
+.support-message{
+margin:0;
+font-size:clamp(2rem,3.7vw,3.15rem);
+line-height:1.05;
+}
+
+.support-button{
+flex:0 0 auto;
+display:inline-flex;
+align-items:center;
+justify-content:center;
+min-width:180px;
+padding:1rem 1.7rem;
+background:#fff;
+color:var(--accent);
+font:700 .82rem Arial,sans-serif;
+text-transform:uppercase;
+letter-spacing:.1em;
+text-decoration:none;
+border:1px solid #fff;
+transition:background .18s ease,color .18s ease,border-color .18s ease;
+}
+
+.support-button:hover,
+.support-button:focus-visible{
+background:transparent;
+color:#fff;
+border-color:#fff;
+}
+
+/* =========================================================
+   08. SHARED SECTION STRUCTURE
    ========================================================= */
 
 section{
@@ -295,7 +352,7 @@ padding:3.3rem;align-self:center
 }
 
 /* =========================================================
-   08. SHARED EDITORIAL LABELS & LINKS
+   09. SHARED EDITORIAL LABELS & LINKS
    ========================================================= */
 
 .meta{
@@ -321,7 +378,7 @@ color:var(--accent)
 }
 
 /* =========================================================
-   09. EXPLORE
+   10. EXPLORE
    ========================================================= */
 
 .explore-grid{
@@ -352,7 +409,7 @@ font-size:.94rem;color:var(--muted)
 }
 
 /* =========================================================
-   10. PHOTO INTERLUDES
+   11. PHOTO INTERLUDES
    ========================================================= */
 
 .photo-interlude{
@@ -372,7 +429,7 @@ object-position:center;
 }
 
 /* =========================================================
-   11. LETTERS & TWO-COLUMN PANELS
+   12. LETTERS & TWO-COLUMN PANELS
    ========================================================= */
 
 .two-col{
@@ -398,7 +455,7 @@ color:var(--muted)
 }
 
 /* =========================================================
-   12. FROM THE ARCHIVE
+   13. FROM THE ARCHIVE
    ========================================================= */
 
 .archive{
@@ -435,7 +492,7 @@ font:.76rem Arial,sans-serif;
 }
 
 /* =========================================================
-   13. VOICES & ORAL MEMORY
+   14. VOICES & ORAL MEMORY
    ========================================================= */
 
 .voice-section{
@@ -471,7 +528,7 @@ max-width:720px
 }
 
 /* =========================================================
-   14. RESEARCH AGENDA, DOSSIERS & OPEN QUESTIONS
+   15. RESEARCH AGENDA, DOSSIERS & OPEN QUESTIONS
    ========================================================= */
 
 .agenda{
@@ -547,7 +604,7 @@ background:var(--warm);
 }
 
 /* =========================================================
-   15. BOOKS & PUBLICATIONS
+   16. BOOKS & PUBLICATIONS
    ========================================================= */
 
 .books{
@@ -584,7 +641,7 @@ background:var(--bg);
 }
 
 /* =========================================================
-   16. GALAPAGENSIS TO GO
+   17. GALAPAGENSIS TO GO
    ========================================================= */
 
 .takeaway{
@@ -613,7 +670,7 @@ font-size:.9rem;
 }
 
 /* =========================================================
-   17. RECENTLY UPDATED
+   18. RECENTLY UPDATED
    ========================================================= */
 
 .updates{
@@ -635,7 +692,7 @@ letter-spacing:.08em;color:var(--accent)
 }
 
 /* =========================================================
-   18. ABOUT
+   19. ABOUT
    ========================================================= */
 
 .about-section{
@@ -667,7 +724,7 @@ object-fit:cover;
 }
 
 /* =========================================================
-   19. FOOTER
+   20. FOOTER
    ========================================================= */
 
 footer{
@@ -713,7 +770,7 @@ font-size:.9rem;
 }
 
 /* =========================================================
-   20. RESPONSIVE: TABLET & SMALL DESKTOP
+   21. RESPONSIVE: TABLET & SMALL DESKTOP
    ========================================================= */
 
 @media(max-width:900px){
@@ -762,6 +819,10 @@ border-bottom:1px solid var(--line);
 border-bottom:0;
 }
 
+.support-banner-inner{
+min-height:auto;
+}
+
 .section-head{
 flex-direction:column;
 align-items:stretch;
@@ -805,11 +866,24 @@ grid-template-columns:repeat(2,1fr)
 }
 
 /* =========================================================
-   21. RESPONSIVE: MOBILE
+   22. RESPONSIVE: MOBILE
    ========================================================= */
 
 @media(max-width:620px){
 .site-nav{gap:.75rem}
+
+.support-banner-inner{
+align-items:flex-start;
+flex-direction:column;
+gap:1.2rem;
+padding-top:1.6rem;
+padding-bottom:1.6rem;
+}
+
+.support-button{
+width:100%;
+min-width:0;
+}
 .site-logo{height:24px}
 .site-wordmark{font-size:.92rem;letter-spacing:.12em}
 .footer-top{
