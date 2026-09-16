@@ -5,14 +5,71 @@
       <span class="site-wordmark">GALAPAGENSIS</span>
     </a>
 
-    <a class="site-nav-link" href="/#explore">Explore</a>
-    <a class="site-nav-link" href="/#research">Research</a>
-    <a class="site-nav-link" href="/#stories">Stories</a>
-    <a class="site-nav-link" href="/#sources">Sources</a>
-    <a class="site-nav-link" href="/#publications">Publications</a>
-    <a class="site-nav-link" href="/#letters">Letters</a>
-    <a class="site-nav-link" href="/#about">About</a>
-    <a class="site-nav-link" href="/#search">Search</a>
+    <div class="site-links" id="site-menu">
+      <a class="site-nav-link" href="/#explore">Explore</a>
+      <a class="site-nav-link" href="/#research">Research</a>
+      <a class="site-nav-link" href="/#stories">Stories</a>
+      <a class="site-nav-link" href="/#sources">Sources</a>
+      <a class="site-nav-link" href="/#publications">Publications</a>
+      <a class="site-nav-link" href="/#letters">Letters</a>
+      <a class="site-nav-link" href="/#about">About</a>
+      <a class="site-nav-link" href="/#search">Search</a>
+    </div>
+
+    <button
+      class="menu-toggle"
+      type="button"
+      aria-expanded="false"
+      aria-controls="site-menu"
+      aria-label="Open navigation menu"
+    >
+      <span aria-hidden="true">☰</span>
+    </button>
+
     <span class="lang">EN / ES</span>
   </nav>
 </header>
+
+<script>
+  (() => {
+    const toggle = document.querySelector(".menu-toggle");
+    const menu = document.querySelector(".site-links");
+
+    if (!toggle || !menu) return;
+
+    const icon = toggle.querySelector("span");
+
+    const closeMenu = () => {
+      menu.classList.remove("is-open");
+      toggle.setAttribute("aria-expanded", "false");
+      toggle.setAttribute("aria-label", "Open navigation menu");
+      if (icon) icon.textContent = "☰";
+    };
+
+    toggle.addEventListener("click", () => {
+      const isOpen = menu.classList.toggle("is-open");
+      toggle.setAttribute("aria-expanded", String(isOpen));
+      toggle.setAttribute(
+        "aria-label",
+        isOpen ? "Close navigation menu" : "Open navigation menu"
+      );
+      if (icon) icon.textContent = isOpen ? "×" : "☰";
+    });
+
+    menu.querySelectorAll("a").forEach((link) => {
+      link.addEventListener("click", closeMenu);
+    });
+
+    document.addEventListener("keydown", (event) => {
+      if (event.key === "Escape") {
+        closeMenu();
+      }
+    });
+
+    window.matchMedia("(min-width: 901px)").addEventListener("change", (event) => {
+      if (event.matches) {
+        closeMenu();
+      }
+    });
+  })();
+</script>
