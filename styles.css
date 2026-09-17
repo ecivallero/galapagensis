@@ -1395,3 +1395,19 @@ min-width:0;
 padding:3.5rem 0 4rem;
 }
 }
+
+.contact-email{
+margin:1.5rem 0 0;
+font:500 1.15rem Arial,sans-serif;
+}
+
+.contact-email a{
+text-decoration:none;
+border-bottom:1px solid var(--accent);
+padding-bottom:.15rem;
+}
+
+.contact-email a:hover,
+.contact-email a:focus-visible{
+color:var(--accent);
+}
