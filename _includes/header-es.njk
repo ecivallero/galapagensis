@@ -1,22 +1,22 @@
 <header class="site-header">
 
-<nav class="wrap site-nav" aria-label="Primary">
+<nav class="wrap site-nav" aria-label="Principal">
 
-<a class="site-brand" href="/" aria-label="Galapagensis home">
+<a class="site-brand" href="/es/" aria-label="Inicio de Galapagensis">
 <img class="site-logo" src="/assets/logos/logo.png" alt="">
 <span class="site-wordmark">GALAPAGENSIS</span>
 </a>
 
 <div class="site-links" id="site-menu">
 
-<a class="site-nav-link" href="/#explore">Explore</a>
-<a class="site-nav-link" href="/#research">Research</a>
-<a class="site-nav-link" href="/#stories">Stories</a>
-<a class="site-nav-link" href="/#sources">Sources</a>
-<a class="site-nav-link" href="/#publications">Publications</a>
-<a class="site-nav-link" href="/#letters">Letters</a>
-<a class="site-nav-link" href="/#about">About</a>
-<a class="site-nav-link" href="/#search">Search</a>
+<a class="site-nav-link" href="/es/#explore">Explorar</a>
+<a class="site-nav-link" href="/es/#research">Investigación</a>
+<a class="site-nav-link" href="/es/#stories">Historias</a>
+<a class="site-nav-link" href="/es/#sources">Fuentes</a>
+<a class="site-nav-link" href="/es/#publications">Publicaciones</a>
+<a class="site-nav-link" href="/es/#letters">Cartas</a>
+<a class="site-nav-link" href="/es/#about">Sobre Galapagensis</a>
+<a class="site-nav-link" href="/es/#search">Buscar</a>
 
 </div>
 
@@ -25,13 +25,13 @@ class="menu-toggle"
 type="button"
 aria-expanded="false"
 aria-controls="site-menu"
-aria-label="Open navigation menu"
+aria-label="Abrir menú de navegación"
 >
 <span aria-hidden="true">☰</span>
 </button>
 
 <span class="lang">
-<strong>EN</strong> / <a href="/es/">ES</a>
+<a href="/">EN</a> / <strong>ES</strong>
 </span>
 </nav>
 </header>
@@ -48,7 +48,7 @@ aria-label="Open navigation menu"
     const closeMenu = () => {
       menu.classList.remove("is-open");
       toggle.setAttribute("aria-expanded", "false");
-      toggle.setAttribute("aria-label", "Open navigation menu");
+      toggle.setAttribute("aria-label", "Abrir menú de navegación");
       if (icon) icon.textContent = "☰";
     };
 
@@ -57,7 +57,7 @@ aria-label="Open navigation menu"
       toggle.setAttribute("aria-expanded", String(isOpen));
       toggle.setAttribute(
         "aria-label",
-        isOpen ? "Close navigation menu" : "Open navigation menu"
+        isOpen ? "Cerrar menú de navegación" : "Abrir menú de navegación"
       );
       if (icon) icon.textContent = isOpen ? "×" : "☰";
     });
