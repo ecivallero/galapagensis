@@ -1107,6 +1107,7 @@ grid-template-columns:120px 1fr;
 gap:1.5rem;
 padding:1.35rem 0;
 border-bottom:1px solid var(--line);
+align-items:baseline;
 }
 
 .genealogy-year{
