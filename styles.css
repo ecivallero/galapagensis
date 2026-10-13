@@ -1412,3 +1412,12 @@ padding-bottom:.15rem;
 .contact-email a:focus-visible{
 color:var(--accent);
 }
+/* Homepage programme development notice */
+.hero .development-notice{
+  max-width:760px;
+  font-family:Arial,sans-serif;
+  font-size:.9rem;
+  font-weight:400;
+  line-height:1.6;
+  color:var(--muted);
+}

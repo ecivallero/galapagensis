@@ -1,25 +1,65 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet type="text/css" href="https://www.xml-sitemaps.com/css/sitemap.css"?>
+
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
 
   <url>
        <loc>https://galapagensis.net/</loc>
-       <lastmod>2026-09-18T14:56:05+00:00</lastmod>
+       <lastmod>2026-10-13T17:47:53+00:00</lastmod>
        <priority>1.0000</priority>
   </url>
   <url>
        <loc>https://galapagensis.net/es/</loc>
-       <lastmod>2026-09-18T14:56:05+00:00</lastmod>
+       <lastmod>2026-10-13T17:47:53+00:00</lastmod>
+       <priority>0.8000</priority>
+  </url>
+  <url>
+       <loc>https://galapagensis.net/research-agenda/</loc>
+       <lastmod>2026-10-13T17:47:53+00:00</lastmod>
+       <priority>0.8000</priority>
+  </url>
+  <url>
+       <loc>https://galapagensis.net/publications/</loc>
+       <lastmod>2026-10-13T17:47:53+00:00</lastmod>
        <priority>0.8000</priority>
   </url>
   <url>
        <loc>https://galapagensis.net/about/</loc>
-       <lastmod>2026-09-18T14:56:05+00:00</lastmod>
+       <lastmod>2026-10-13T17:47:53+00:00</lastmod>
        <priority>0.8000</priority>
   </url>
   <url>
+       <loc>https://galapagensis.net/research/georgina-lloyd-taylor/</loc>
+       <lastmod>2026-10-13T17:47:53+00:00</lastmod>
+       <priority>0.8000</priority>
+  </url>
+  <url>
+       <loc>https://galapagensis.net/rights-and-use/</loc>
+       <lastmod>2026-10-13T17:47:53+00:00</lastmod>
+       <priority>0.8000</priority>
+  </url>
+  <url>
+       <loc>https://galapagensis.net/es/agenda-de-investigacion/</loc>
+       <lastmod>2026-10-13T17:47:53+00:00</lastmod>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://galapagensis.net/es/publicaciones/</loc>
+       <lastmod>2026-10-13T17:47:53+00:00</lastmod>
+       <priority>0.6400</priority>
+  </url>
+  <url>
        <loc>https://galapagensis.net/es/acerca-de/</loc>
-       <lastmod>2026-09-18T14:56:05+00:00</lastmod>
+       <lastmod>2026-10-13T17:47:53+00:00</lastmod>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://galapagensis.net/es/investigacion/georgina-lloyd-taylor/</loc>
+       <lastmod>2026-10-13T17:47:53+00:00</lastmod>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://galapagensis.net/es/derechos-y-usos/</loc>
+       <lastmod>2026-10-13T17:47:53+00:00</lastmod>
        <priority>0.6400</priority>
   </url>
 </urlset>
